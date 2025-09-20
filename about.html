@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Shopfinity</div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="addproduct.html">Add Product</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+   <section class="about">
+  <div class="about-text">
+    <h2>About Our Website</h2>
+
+    <p class="intro">
+      Welcome to <strong>Shopfinity</strong> 🚀 – your one-stop destination for smarter shopping!
+    </p>
+
+    <div class="about-content-box">
+      <p>
+        At Shopfinity, we believe that shopping should be <strong>simple</strong>, <strong>fast</strong>, and <strong>fun</strong>. That’s why we’ve built a platform where you can find everything you need – from the latest electronics and smart devices to stylish fashion, home essentials, and more.
+      </p>
+
+      <ul class="about-list">
+        <li>🖥️ Laptops, Tablets & Accessories</li>
+        <li>🎧 Headphones, Speakers & Smart Devices</li>
+        <li>📺 TVs, Cameras & Home Appliances</li>
+        <li>👟 Shoes, Bags, Sunglasses & Perfumes</li>
+        <li>💍 Rings and Trendy Accessories – and so much more!</li>
+      </ul>
+
+      <p>
+        Our goal is to make your online shopping experience as <strong>smooth</strong> and <strong>enjoyable</strong> as possible. With fast delivery, secure payments, and friendly support – you’re always in good hands.
+      </p>
+    </div>
+
+    <p class="slogan">Shop smart. Live better. <span>Shopfinity.</span></p>
+  </div>
+</section>
+
+<!-- why Section -->
+  <section class="why-choose-us">
+  <h2>Why Choose Shopfinity?</h2>
+  <div class="features">
+    <div class="feature-card">
+      <span class="icon">🚚</span>
+      <h3>Fast Delivery</h3>
+      <p>Receive your products quickly and reliably with our express shipping options.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon">🔒</span>
+      <h3>Secure Payment</h3>
+      <p>Shop with confidence using our trusted and secure payment system.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon">🛍️</span>
+      <h3>Wide Product Range</h3>
+      <p>Find everything from electronics to fashion – all in one place.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon">💬</span>
+      <h3>Friendly Support</h3>
+      <p>Need help? Our support team is here for you anytime.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <img src="aya.jpg.jpg" alt="Aya Abdelrahman" class="profile-img">
+    <h3>Aya Abdelrahman</h3>
+    <p>Frontend Developer 💻✨</p>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-section shop-info">
+      <h2>Shopfinity</h2>
+      <p>Your ideal store for everything you need! Enjoy a unique, safe, and easy shopping experience with us.</p>
+      <div class="contact-info">
+        <p>📞 0123-456-789</p>
+        <p>📧 support@shopfinity.com</p>
+        <p>📍 Cairo, Egypt</p>
+      </div>
+    </div>
+
+    <div class="footer-section quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html"> Home</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="products.html"> Products</a></li>
+        <li><a href="addproduct.html"> Add Product</a></li>
+        <li><a href="cart.html"> Cart</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Subscribe to Newsletter</h3>
+      <p>Join our mailing list to receive the latest offers and products.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+   <div class="footer-section social-media">
+  <h3>Follow Us</h3>
+  <div class="icons">
+    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="Website"><i class="fas fa-globe"></i></a>
+  </div>
+</div>
+
+
+    <div class="footer-bottom">
+      &copy; 2025 Shopfinity. All rights reserved.
+    </div>
+  </footer>
+
+
+
+  <!-- JS for Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

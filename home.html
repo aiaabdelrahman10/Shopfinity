@@ -1,0 +1,296 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Home</title> 
+  <link rel="stylesheet" href="home.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <!--  Navbar -->
+  <nav class="navbar"> 
+    <div class="logo">Shopfinity</div> 
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-links"> 
+      <li><a href="home.html" class="active">Home</a></li> 
+      <li><a href="about.html">About</a></li> 
+      <li><a href="products.html">Products</a></li> 
+      <li><a href="addproduct.html">Add Product</a></li> 
+      <li><a href="cart.html">Cart</a></li> 
+      <li><a href="index.html">Logout</a></li> 
+    </ul>
+  </nav>
+
+  <!-- Slider Section -->
+<section class="hero-swiper-section">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://media.istockphoto.com/id/1699842032/photo/online-shopping-e-commerce-concept-woman-using-mobile-phone-and-laptop-computer-for-online.jpg?s=612x612&w=0&k=20&c=P9D1vmARipMgA-yfOc6biO8OFBqjwcYPTo19sTcwarA=" alt="Banner 2">
+        <div class="hero-content">
+          <h1>Unbeatable Deals Await!</h1>
+          <p>Everything You Want, Just a Click Away</p>
+           <br><br><a href="products.html" class="hero-btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://media.istockphoto.com/id/1560142923/photo/online-shopping-modern-background-glowing-shopping-cart-icon-web3-colours-cgi-3d-render.jpg?s=612x612&w=0&k=20&c=UtUKPEK_F6nH2PboL_hc75D2drqJ0Tc3UwzzEhwvfRA=" alt="Banner 3">
+        <div class="hero-content">
+          <h1>Style Meets Savings</h1>
+          <a href="products.html" class="hero-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+  <!-- Featured Products Section -->
+<section class="featured-products">
+  <h2>Featured Products</h2>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media.istockphoto.com/id/1249496770/photo/running-shoes.jpg?s=612x612&w=0&k=20&c=b4MahNlk4LH6H1ksJApfnlQ5ZPM3KGhI5i_yqhGD9c4=" alt="Product 1">
+      <h3>shoes</h3>
+      <p class="price">900 EGP</p>
+      <p class="rating">⭐ 4.7</p>
+      <button onclick="addToCart('Shoes', 900, 'images/product1.jpg')">Add to Cart</button>
+    </div>
+    <div class="flip-card-back">
+      <h3>About this product</h3>
+      <p>This is a high-quality modern product, designed for daily use and style.</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media.istockphoto.com/id/1180244659/photo/luxury-watch-isolated-on-white-background-with-clipping-path-for-artwork-or-design-black.jpg?s=612x612&w=0&k=20&c=yeFNfkQmcVV9BTUlZO8vY_oLOQgDAt23LfCbF1e3fbI=" alt="Product 1">
+      <h3>Watch</h3>
+      <p class="price">1200 EGP</p>
+      <p class="rating">⭐ 4.2</p>
+      <button onclick="addToCart('Watch', 1200, 'images/product1.jpg')">Add to Cart</button>
+    </div>
+    <div class="flip-card-back">
+      <h3>About this product</h3>
+      <p>This is a high-quality modern product, designed for daily use and style.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media.istockphoto.com/id/182915079/photo/microwave-oven.jpg?s=612x612&w=0&k=20&c=dbSOoDz0KBawI7wxXkhm3DxuYfK0O6WLiwdx1xu4KhU=" alt="Product 1">
+      <h3>Microwave</h3>
+      <p class="price">1800 EGP</p>
+      <p class="rating">⭐ 4.6</p>
+      <button onclick="addToCart('Microwave', 1800, 'images/product1.jpg')">Add to Cart</button>
+    </div>
+    <div class="flip-card-back">
+      <h3>About this product</h3>
+      <p>This is a high-quality modern product, designed for daily use and style.</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media.istockphoto.com/id/511646917/photo/golden-diamond-ring-and-contemporary-diamond.jpg?s=612x612&w=0&k=20&c=69CbeMNEwZso5PBbwpPBzPZpO243ZHAAT5QoOHKpGrU=" alt="Product 1">
+      <h3>Rings</h3>
+      <p class="price">2000 EGP</p>
+      <p class="rating">⭐ 4.9</p>
+      <button onclick="addToCart('Ring', 2000, 'images/product1.jpg')">Add to Cart</button>
+    </div>
+    <div class="flip-card-back">
+      <h3>About this product</h3>
+      <p>This is a high-quality modern product, designed for daily use and style.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Deals Section -->
+<section class="deals-section">
+  <h2>Best Deals </h2>
+   <div class="container">
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media.istockphoto.com/id/469328286/photo/smartwatch.jpg?s=612x612&w=0&k=20&c=Uns1U2fjc0M5DIzxW8qo8Wm_K7afxfNlwRWaiXs46PM=" alt="Product 1">
+      <h3>Smart Watch </h3>
+      <p><span class="old-price">1200 EGP</span> <span class="new-price">800 EGP</span></p>
+      <p class="rating">⭐ 4.7</p>
+      <button onclick="addToCart('Smart Watch', 800, 'images/product1.jpg')">Add to Cart</button>
+    </div>
+    <div class="flip-card-back">
+      <h3>About this product</h3>
+      <p>This is a high-quality modern product, designed for daily use and style.</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media.istockphoto.com/id/1156218302/photo/top-view-of-vintage-cameras-on-white-background.jpg?s=612x612&w=0&k=20&c=LBHmMbv1VoBPaynZ1v9ho6vUU-2jhxh1IZ2toXBJ0js=" alt="Product 1">
+      <h3>Camira </h3>
+      <p><span class="old-price">10000 EGP</span> <span class="new-price">6000 EGP</span></p>
+      <p class="rating">⭐ 3.4</p>
+      <button onclick="addToCart('Camira', 10000, 'images/product1.jpg')">Add to Cart</button>
+    </div>
+    <div class="flip-card-back">
+      <h3>About this product</h3>
+      <p>This is a high-quality modern product, designed for daily use and style.</p>
+    </div>
+  </div>
+</div>
+   </div>
+</section>
+
+
+<!-- Customer Reviews Section -->
+<section class="reviews-section">
+  <h2>What Our Customers Say</h2>
+  <div class="reviews-container">
+    <div class="review-card">
+      <p>"Excellent quality and fast delivery. Totally recommend!"</p>
+      <h4>- Sarah </h4>
+    </div>
+    <div class="review-card">
+      <p>"Customer service is top-notch. They helped me with my order quickly."</p>
+      <h4>- Omar </h4>
+    </div>
+    <div class="review-card">
+      <p>"Affordable prices and great offers. Will shop again!"</p>
+      <h4>- Arwa</h4>
+    </div>
+  </div>
+ 
+</section>
+
+<!-- footer -->
+  <footer class="footer">
+    <div class="footer-section shop-info">
+      <h2>Shopfinity</h2>
+      <p>Your ideal store for everything you need! Enjoy a unique, safe, and easy shopping experience with us.</p>
+      <div class="contact-info">
+        <p>📞 0123-456-789</p>
+        <p>📧 support@shopfinity.com</p>
+        <p>📍 Cairo, Egypt</p>
+      </div>
+    </div>
+
+    <div class="footer-section quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="products.html"> Products</a></li>
+        <li><a href="addproduct.html"> Add Product</a></li>
+        <li><a href="cart.html"> Cart</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Subscribe to Newsletter</h3>
+      <p>Join our mailing list to receive the latest offers and products.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-section social-media">
+  <h3>Follow Us</h3>
+  <div class="icons">
+    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="Website"><i class="fas fa-globe"></i></a>
+  </div>
+</div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Shopfinity. All rights reserved.
+    </div>
+  </footer>
+
+  <!--  Chatbot  -->
+    
+<div id="chatbot-button">🤖</div>
+
+
+<div id="chatbot-popup" style="display: none;">
+  <div id="chatbot-header">Chat with us</div>
+  <div id="chatbot-messages"></div>
+  <input type="text" id="chatbot-input" placeholder="Type a message..." onkeydown="handleChatKey(event)">
+</div>
+
+  
+    <!-- JS for Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="home.js"></script>
+  <script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("chatbot-button");
+    const popup = document.getElementById("chatbot-popup");
+
+    button.addEventListener("click", function () {
+    
+      if (popup.style.display === "none" || popup.style.display === "") {
+        popup.style.display = "block";
+        console.log("Chatbot opened");
+      } else {
+        popup.style.display = "none";
+        console.log("Chatbot closed");
+      }
+    });
+  });
+</script>
+<script>
+  function handleChatKey(event) {
+    if (event.key === "Enter") {
+      const input = document.getElementById("chatbot-input");
+      const message = input.value.trim();
+
+      if (message !== "") {
+        appendChatMessage("You", message);
+        input.value = "";
+
+        
+        setTimeout(() => {
+          appendChatMessage("Bot", "thanks ,how are you");
+        }, 1000);
+      }
+    }
+  }
+
+  function appendChatMessage(sender, text) {
+    const container = document.getElementById("chatbot-messages");
+    const msg = document.createElement("div");
+    msg.innerHTML = `<strong>${sender}:</strong> ${text}`;
+    container.appendChild(msg);
+    container.scrollTop = container.scrollHeight; 
+  }
+</script>
+</body>
+</html>

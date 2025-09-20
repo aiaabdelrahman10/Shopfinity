@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Shopfinity</div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="home.html" >Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html"class="active">Products</a></li>
+      <li><a href="addproduct.html">Add Product</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container -->
+  <section class="products" id="products-container">
+  </section>
+
+
+<footer class="footer">
+    <div class="footer-section shop-info">
+      <h2>Shopfinity</h2>
+      <p>Your ideal store for everything you need! Enjoy a unique, safe, and easy shopping experience with us.</p>
+      <div class="contact-info">
+        <p>📞 0123-456-789</p>
+        <p>📧 support@shopfinity.com</p>
+        <p>📍 Cairo, Egypt</p>
+      </div>
+    </div>
+
+    <div class="footer-section quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html"> Home</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="products.html"> Products</a></li>
+        <li><a href="addproduct.html"> Add Product</a></li>
+        <li><a href="cart.html"> Cart</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Subscribe to Newsletter</h3>
+      <p>Join our mailing list to receive the latest offers and products.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-section social-media">
+  <h3>Follow Us</h3>
+  <div class="icons">
+    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="Website"><i class="fas fa-globe"></i></a>
+  </div>
+</div>
+
+
+    <div class="footer-bottom">
+      &copy; 2025 Shopfinity. All rights reserved.
+    </div>
+  </footer>
+
+
+  
+    <!-- JS for Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <script src="products.js"></script>
+</body>
+</html>
