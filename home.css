@@ -77,7 +77,6 @@ body {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
     background: #4a148c;
     position: absolute;
     top: 60px;
@@ -91,9 +90,6 @@ body {
     margin: 10px 0;
   }
 
-  .menu-toggle {
-    display: block;
-  }
 
   .nav-links.active {
     display: flex;
@@ -568,4 +564,5 @@ body {
   text-decoration: line-through;
   color: #888;
 }
+
 
